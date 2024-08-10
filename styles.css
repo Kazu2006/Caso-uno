@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #333333;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.upload-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.drop-zone {
+    background-color: #e9ecef;
+    border: 2px dashed #007bff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.drop-zone.drag-over {
+    background-color: #e0e0e0;
+}
+
+.drop-zone i {
+    color: #007bff;
+}
+
+.drop-zone p {
+    margin-top: 10px;
+    color: #007bff;
+}
+
+.drop-zone a {
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#file-list {
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.file-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.file-info {
+    display: flex;
+    align-items: center;
+    word-break: break-all;
+}
+
+.file-info svg {
+    margin-right: 8px;
+}
+
+.download-btn, .delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.download-btn i, .delete-btn i {
+    font-size: 16px;
+}
+
+.delete-btn i {
+    color: #ff0000;
+}
+
+.download-btn i {
+    color: #28a745;
+}
+
+#no-files-text {
+    color: #777;
+    text-align: center;
+    margin-top: 10px;
+    display: none; /* Inicia oculto */
+}
